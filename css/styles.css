@@ -1,0 +1,91 @@
+
+*{box-sizing:border-box}
+body{
+  font-family: "Noto Sans SC", system-ui, -apple-system, "Microsoft YaHei", sans-serif;
+  margin:0; background:#f5f7fb; color:#111;
+  background-color: #f5f7fb; 
+  background-image: url("../assets/xusheng.gif"); 
+  background-size: 10%;
+  /*background-position: center;*/
+  /*background-attachment: fixed;*/ 
+}
+.container{max-width:900px; margin:28px auto; padding:16px;}
+h1 {
+  margin: 0 0 12px 0;
+  font-family: "SimHei", "黑体", sans-serif; 
+  font-size: 40px;                           
+  font-weight: bold;                         
+  text-align: center; 
+  color: red;          
+}
+.table-wrap {
+  border: 4px solid #333;      /* 整个表格外边框 */
+  border-radius: 32px;          /* 圆角，可选 */
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(20,30,50,1);
+}
+.row {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  gap: 12px;
+  border-bottom: 1px solid #ccc; 
+}
+.row {
+  background: #fff;   /* 基础行背景：白色 */
+}
+
+.row.alt {
+  background: #f7f7f7;  /* 交替行背景：浅灰 */
+}
+.row:last-child {
+  border-bottom: none; 
+}
+.cell {
+  border-right: 1px solid #ccc;  
+  padding: 6px 0;
+}
+.cell:last-child {
+  border-right: none; 
+}
+.row.header{background:#f7fbff; font-weight:600;}
+.col-img{width:560px; flex:0 0 560px; display:flex; align-items:center; justify-content:center;}
+.col-text {font-family: "KaiTi", "楷体", serif; 
+  font-size: 36px;                    
+  line-height: 1.6;      
+  text-align: center;               
+}
+.row.header .cell {
+  font-family: "SimHei", "黑体", sans-serif; 
+  font-size: 30px;                          
+  font-weight: bold;    
+  text-align: center;      
+  justify-content: center;                
+}
+.img-wrap {
+  width: 420px;      /* 跟表格列宽一致 */
+  height: auto;      /* 高度自适应 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+.img-wrap img {
+  width: 100%;       /* 填满宽度 */
+  height: auto;      /* 保持比例 */
+  object-fit: cover; /* 填满时会裁剪 */
+}
+.row.alt{background:#fbfeff;}
+.empty-note{color:#9aa6bf; font-size:14px;}
+.foot{margin-top:12px; color:#6b7a90; font-size:13px;}
+@media (max-width:520px){
+  .col-img{width:100px; flex:0 0 100px;}
+  .img-wrap{width:84px; height:56px;}
+  .col-img video {
+  max-width: 200%;
+  max-height: 200%;
+  display: block;
+  border-radius: 10px;
+}
+
+}

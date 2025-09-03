@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>许晟 · 图片文字表格（100×2）</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>许晟的大学生活</h1>
+
+
+    <div class="table-wrap" id="tableWrap" role="table" aria-label="图片文字表格">
+      <div class="row header" role="row">
+        <div class="cell col-img" role="columnheader">图片</div>
+        <div class="cell col-text" role="columnheader">文字</div>
+      </div>
+      <div id="rows" class="rows" role="rowgroup">
+
+      </div>
+    </div>
+    <div class="table-wrap" id="videoTableWrap" role="table" aria-label="视频文字表格">
+      <div class="row header" role="row">
+       <div class="cell col-img" role="columnheader">视频</div>
+       <div class="cell col-text" role="columnheader">文字</div>
+      </div>
+      <div id="videoRows" class="rows" role="rowgroup"></div>
+    </div>
+    <footer class="foot">
+      <p>提示：将图片放在 <code>assets/</code> 文件夹，并在 <code>data/items.json</code> 中写入路径与文字。</p >
+    </footer>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
